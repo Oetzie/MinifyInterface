@@ -1,0 +1,71 @@
+{
+    "name"          : "Minify Interface",
+    "namespace"     : "minifyinterface",
+    "signature"     : "minifyinterface",
+    "description"   : "",
+    "version"       : "1.0.1-pl",
+    "elements"      : {
+        "snippets"       : [{
+            "name"          : "MinifyInterface",
+            "description"   : "Minify Interface 1.0.1-pl snippet for MODx Revolution",
+            "resolver"      : "elements/snippets/minifyinterface.snippet.php",
+            "properties"    : [{
+                "name"          : "base",
+                "desc"          : "minifyinterface_snippet_base_desc",
+                "value"         : "/"
+            }, {
+                "name"          : "directory",
+                "desc"          : "minifyinterface_snippet_directory_desc"
+            }, {
+                "name"          : "files",
+                "desc"          : "minifyinterface_snippet_files_desc"
+            }, {
+                "name"          : "inline",
+                "desc"          : "minifyinterface_snippet_inline_desc",
+                "xtype"         : "combo-boolean",
+                "value"         : "0"
+            }, {
+                "name"          : "name",
+                "desc"          : "minifyinterface_snippet_name_desc"
+            }, {
+                "name"          : "tpl",
+                "desc"          : "minifyinterface_snippet_tpl_desc"
+            }, {
+                "name"          : "tplCss",
+                "desc"          : "minifyinterface_snippet_tplcss_desc",
+                "value"         : "@INLINE:<link rel=\"stylesheet\" href=\"[[+output]]\" />"
+            }, {
+                "name"          : "tplCssInline",
+                "desc"          : "minifyinterface_snippet_tplcssinline_desc",
+                "value"         : "@INLINE:<style type=\"text/css\">[[+output]]</style>"
+            }, {
+                "name"          : "tplJs",
+                "desc"          : "minifyinterface_snippet_tpljs_desc",
+                "value"         : "@INLINE:<script type=\"text/javascript\" src=\"[[+output]]\"></script>"
+            }, {
+                "name"          : "tplJsInline",
+                "desc"          : "minifyinterface_snippet_tpljsinline_desc",
+                "value"         : "@INLINE:<script type=\"text/javascript\">[[+output]]</script>"
+            }, {
+                "name"          : "type",
+                "desc"          : "minifyinterface_snippet_type_desc",
+                "value"         : "CSS"
+            }]
+        }]
+    },
+    "settings"      : [{
+        "key"           : "cache_path",
+        "value"         : "assets/cache/"
+    }, {
+        "key"           : "enabled",
+        "xtype"         : "combo-boolean",
+        "value"         : "1"
+    }],
+    "build"         : {
+        "attributes"    : {
+            "license"       : "docs/license.txt",
+            "readme"        : "docs/readme.txt",
+            "changelog"     : "docs/changelog.txt"   
+        }
+    }
+}
